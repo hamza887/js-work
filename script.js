@@ -101,20 +101,29 @@
 //  }
 //  console.log(century);
 
-  const Markheight=1.69;
- const MarkMass=78;
- const BMIMark= Math.floor(MarkMass/Markheight**2);
- console.log(BMIMark); 
-const johnHeight=1.95;
-const johnWeight=85;
-const BMIJohn=Math.floor(johnWeight/johnHeight**2);
-console.log(BMIJohn);
+//   const Markheight=1.69;
+//  const MarkMass=78;
+//  const BMIMark= Math.floor(MarkMass/Markheight**2);
+//  console.log(BMIMark); 
+// const johnHeight=1.95;
+// const johnWeight=85;
+// const BMIJohn=Math.floor(johnWeight/johnHeight**2);
+// console.log(BMIJohn);
 
-const BMI= `Marks BMI (${BMIMark}) is higher than (${BMIJohn}) ✌`;
-console.log(BMI);
+// const BMI= `Marks BMI (${BMIMark}) is higher than (${BMIJohn}) ✌`;
+// console.log(BMI);
 
-if(BMIMark>BMIJohn){
-    console.log('Hi Mark is the real winner');
-}else{
-    console.log('I think John wins');
-}
+// if(BMIMark>BMIJohn){
+//     console.log('Hi Mark is the real winner');
+// }else{
+//     console.log('I think John wins');
+// }
+
+const inputYear= '1991';
+console.log(Number(inputYear));
+
+console.log('23'*'10'+4);
+
+let n= '1'+1;
+n=n-1
+console.log(n)
