@@ -84,19 +84,37 @@
 // John.higherBMI()===marks.higherBMI()
 
 
-const age= 19;
- const isOldEnough= age=>18;
- if(isOldEnough){
-     console.log('You Are old enough to drive ✌');
- }else{
-     console.log('you are not old enough sorry 😒');
- };
+// const age= 19;
+//  const isOldEnough= age=>18;
+//  if(isOldEnough){
+//      console.log('You Are old enough to drive ✌');
+//  }else{
+//      console.log('you are not old enough sorry 😒');
+//  };
 
- const birthYear=1991;
- let century;
- if(birthYear<=2000){
-      century= 20;
- }else{
-      century=21;
- }
- console.log(century);
+//  const birthYear=1991;
+//  let century;
+//  if(birthYear<=2000){
+//       century= 20;
+//  }else{
+//       century=21;
+//  }
+//  console.log(century);
+
+  const Markheight=1.69;
+ const MarkMass=78;
+ const BMIMark= Math.floor(MarkMass/Markheight**2);
+ console.log(BMIMark); 
+const johnHeight=1.95;
+const johnWeight=85;
+const BMIJohn=Math.floor(johnWeight/johnHeight**2);
+console.log(BMIJohn);
+
+const BMI= `Marks BMI (${BMIMark}) is higher than (${BMIJohn}) ✌`;
+console.log(BMI);
+
+if(BMIMark>BMIJohn){
+    console.log('Hi Mark is the real winner');
+}else{
+    console.log('I think John wins');
+}
