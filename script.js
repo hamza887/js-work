@@ -47,3 +47,38 @@ wineRoom(18)
 
 console.log(firstName===lastName);
 
+
+let x, y;
+ x=y = 25-10+5;
+ console.log(x);
+
+ //////coding exercise ////
+
+ const Markheight=1.69;
+ const MarkMass=78;
+ const BMIMark= MarkMass/Markheight**2;
+ console.log(BMIMark); 
+const johnHeight=1.95;
+const johnWeight=85;
+const BMIJohn=johnWeight/johnHeight**2;
+console.log(BMIJohn);
+const higherBMI= BMIMark===BMIJohn;
+console.log(higherBMI);
+
+class BMI{
+    constructor(name,height,mass){
+        this.name=name;
+        this.height=height;
+        this.mass=mass;
+    }
+    higherBMI(){
+        const BMIValue= Math.floor(this.mass/this.height**2);
+        console.log(BMIValue);
+    }
+}
+const marks= new BMI('Marks',1.69,78);
+console.log(marks);
+marks.higherBMI();
+const John= new BMI('John',1.95,92)
+console.log(John);
+John.higherBMI()===marks.higherBMI()
