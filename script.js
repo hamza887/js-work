@@ -136,4 +136,39 @@
 // tipCal(375);
 
 
+// const yearsUntilRetirement =(yourAge)=>{
+//        return 65-yourAge
+// }
 
+// console.log(yearsUntilRetirement(23));
+
+// const calcAverage=(score1,score2,score3)=>{
+//     const totalScore= (score1+score2+score3)/3;
+//     console.log(`The total score would be ${totalScore}`);
+// }
+
+// const calcDolphins=(calcAverage)=>{
+//    console.log('The total score of dolphins is '+calcAverage);
+// }
+
+// calcDolphins(calcAverage(44,23,71))
+// const checkWinner=()=>{
+
+// }
+
+const avgDolphins=(score1,score2,score3)=>{
+      const totalScore= (score1+score2+score3)/3;
+      console.log('The total score of dolphins are '+totalScore);
+}
+
+const avgKoalas=(score1,score2,score3)=>{
+    const totalScore= (score1+score2+score3)/3;
+    console.log("The total score of Koalas are "+totalScore);
+}
+
+avgDolphins(44,23,71);
+avgKoalas(65,54,49);
+const checkWinner=()=>{
+    avgDolphins(44,23,71)===avgKoalas(65,54,49);
+}
+checkWinner()
