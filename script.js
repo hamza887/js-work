@@ -156,19 +156,44 @@
 
 // }
 
-const avgDolphins=(score1,score2,score3)=>{
-      const totalScore= (score1+score2+score3)/3;
-      console.log('The total score of dolphins are '+totalScore);
+// const calcAverage= (a,b,c)=> (a+b+c)/3;
+// console.log(calcAverage(2,3,4));
+
+// const scoreDolphins= calcAverage(44,23,71);
+// console.log(scoreDolphins);
+
+// const scoreKoalas= calcAverage(65,54,49);
+// console.log(scoreKoalas);
+
+// const checkWinner = function(avgDolphins,avgKoalas){
+//     if(avgDolphins>=2*avgKoalas){
+//         console.log('Dolphins win ');
+//     }else if(avgKoalas>= 2*avgDolphins){
+//         console.log("Koalas wins");
+//     }
+// }
+
+
+const friend1= 'Micheal';
+const friend2= "Steven";
+const friend3="Peter";
+
+// const friends= ['Micheal',"Steven","Peter"];
+// console.log(friends);
+
+// const years= new Array(1991,1984,2020);
+// console.log(years[years.length-2]);
+
+// friends[2]='haello';
+// console.log(friends.length);
+
+const calcAge= (birthyear)=>{
+    return 2037- birthyear
 }
 
-const avgKoalas=(score1,score2,score3)=>{
-    const totalScore= (score1+score2+score3)/3;
-    console.log("The total score of Koalas are "+totalScore);
-}
+const years=[1990,1998,2000,2020];
+const age1= calcAge(years[0]);
+console.log(age1);
+const ages= [calcAge(years[0]),calcAge(years[1]),calcAge(years[2])];
 
-avgDolphins(44,23,71);
-avgKoalas(65,54,49);
-const checkWinner=()=>{
-    avgDolphins(44,23,71)===avgKoalas(65,54,49);
-}
-checkWinner()
+console.log(ages);
