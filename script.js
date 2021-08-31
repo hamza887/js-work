@@ -127,3 +127,9 @@ console.log('23'*'10'+4);
 let n= '1'+1;
 n=n-1
 console.log(n)
+
+const tipCal=(bill)=>{
+    return bill >= 50 && bill <=300 ? console.log(`Your 15% tip is ${ (15/100)*bill}, so the total amount is ${bill +(15/100)*bill}`):console.log(`Your 20% tip is ${(20/100)*bill}, so the total amount is ${bill +(20/100)*bill}`); 
+}
+
+tipCal(375)
