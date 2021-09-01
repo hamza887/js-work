@@ -263,80 +263,114 @@
 // console.log('hello')
 // console.log('jdlfkjdlfkj');
 
-const myProfile ={
-    firstName:'hamza',
-    lastName:'zaka',
-    age:23,
-    driver:true,
-    job:'computer',
+// const myProfile ={
+//     firstName:'hamza',
+//     lastName:'zaka',
+//     age:23,
+//     driver:true,
+//     job:'computer',
 
-    aliveYear:function(){
-      const date= new Date();
-      const currentYear= date.getFullYear();
-      const totalYears= currentYear-(this.age);
-      console.log(`If your Age is ${this.age} and the Year is ${currentYear}, Your total years are ${totalYears}`);
-    }
-}
-console.log(myProfile.aliveYear());
+//     aliveYear:function(){
+//       const date= new Date();
+//       const currentYear= date.getFullYear();
+//       const totalYears= currentYear-(this.age);
+//       console.log(`If your Age is ${this.age} and the Year is ${currentYear}, Your total years are ${totalYears}`);
+//     }
+// }
+// console.log(myProfile.aliveYear());
 
-const markBMIs={
-    firstName:'Mark',
-    lastName:'Miller',
-    mass: '78',
-    height:'1.69',
-    data:0,
-    calcBMI: function (){
-        const total= (this.mass/this.height)**2;
-        this.data=Math.floor(total);
-        console.log(`The total BMI of ${this.firstName} is ${Math.floor(total)}`);
-    }
+// const markBMIs={
+//     firstName:'Mark',
+//     lastName:'Miller',
+//     mass: '78',
+//     height:'1.69',
+//     data:0,
+//     calcBMI: function (){
+//         const total= (this.mass/this.height)**2;
+//         this.data=Math.floor(total);
+//         console.log(`The total BMI of ${this.firstName} is ${Math.floor(total)}`);
+//     }
 
-}
-markBMIs.calcBMI();
+// }
+// markBMIs.calcBMI();
 
-const johnBMIs={
-    firstName:'John',
-    lastName:'Smith',
-    mass: '92',
-    height:'1.95',
-    data:0,
-    calcBMI: function (){
-        const total= (this.mass/this.height)**2;
-        this.data=Math.floor(total);
-        console.log(`The total BMI of ${this.firstName} is ${Math.floor(total)}`);
-    }
+// const johnBMIs={
+//     firstName:'John',
+//     lastName:'Smith',
+//     mass: '92',
+//     height:'1.95',
+//     data:0,
+//     calcBMI: function (){
+//         const total= (this.mass/this.height)**2;
+//         this.data=Math.floor(total);
+//         console.log(`The total BMI of ${this.firstName} is ${Math.floor(total)}`);
+//     }
 
-}
-johnBMIs.calcBMI();
-console.log( johnBMIs.data);
+// }
+// johnBMIs.calcBMI();
+// console.log( johnBMIs.data);
 
-if(markBMIs.data>johnBMIs.data){
-    console.log(`${markBMIs.firstName} has a higher data ${markBMIs.data}`);
-}else{
-    console.log(`${johnBMIs.firstName} has a higher data ${johnBMIs.data}`);
+// if(markBMIs.data>johnBMIs.data){
+//     console.log(`${markBMIs.firstName} has a higher data ${markBMIs.data}`);
+// }else{
+//     console.log(`${johnBMIs.firstName} has a higher data ${johnBMIs.data}`);
 
-}
+// }
 
 // for (let hello = 0; hello <=10; hello++) {
 //     console.log('I  am hello no '+hello);
     
 // }
 
-const arr=['hamza','zaka',23-1,'teacher',['hello','hello2','hello3']];
-const types=[];
-let hh=[]
-for (let i = 0; i <arr.length; i++) {
-    // console.log(arr[i], typeof arr[i]);
-    types[i]=typeof arr[i];
+// const arr=['hamza','zaka',23-1,'teacher',['hello','hello2','hello3']];
+// const types=[];
+// let hh=[]
+// for (let i = 0; i <arr.length; i++) {
+//     if(typeof arr[i]!=='string') return;
+//     console.log(arr[i], typeof arr[i]);
+    // types[i]=typeof arr[i];
     
-}
+// }
 // console.log(types);
 
-arr.forEach(element => {
-    console.log(element);
-    hh= typeof element;
-    console.log(hh);
-});
+
+
+// arr.forEach(element => {
+//     console.log(element);
+//     hh= typeof element;
+//     console.log(hh);
+// });
+
+
+// const birthYear=[1991,1998,2000,2001];
+// const ages=[];
+// for (let i = 0; i <birthYear.length; i++) {
+//     console.log(birthYear[i]);
+//     const date= new Date();
+//     const year= date.getFullYear();
+//     ages[i]= `Your current age is ${year-birthYear[i]}`;
+
+    
+// }
+// console.log(ages);
+
+const arr=['hamza','zaka','teacher','hello','hello2','hello3'];
+
+
+for(let i=arr.length-1;i>=0;i--){
+    console.log(arr[i]);
+}
+
+for (let i = 1; i <=3; i++) {
+    console.log('--------- Starting our challenge'+ i);
+    for (let j = 0; j < arr.length; j++) {
+console.log(`Challenge ${i}: is for ${arr[j]} who is person ${j}`);
+        
+    }
+}
+
+
+
 
 
 
