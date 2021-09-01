@@ -235,21 +235,21 @@
 
 // // console.log(calcTip(200));
 
-const jones={
-    firstName:"hamza",
-    lastName:"Zaka",
-    age : 2021-1998,
-    job:"Programmer",
-    myFriends:['hamza','zaka','mobeen'],
+// const jones={
+//     firstName:"hamza",
+//     lastName:"Zaka",
+//     age : 2021-1998,
+//     job:"Programmer",
+//     myFriends:['hamza','zaka','mobeen'],
 
-    calcAge: function(birthyear){
-        const date=new Date();
-        const year =date.getFullYear();
-        return year-birthyear;
-        console.log('hello birthyear');
-    }
-}
-console.log( jones.calcAge(1998));
+//     calcAge: function(birthyear){
+//         const date=new Date();
+//         const year =date.getFullYear();
+//         return year-birthyear;
+//         console.log('hello birthyear');
+//     }
+// }
+// console.log( jones.calcAge(1998));
 
 // console.log(jones);
 // console.log(jones.lastName);
@@ -262,6 +262,62 @@ console.log( jones.calcAge(1998));
 // console.log(jones[interestedIn]);
 // console.log('hello')
 // console.log('jdlfkjdlfkj');
+
+const myProfile ={
+    firstName:'hamza',
+    lastName:'zaka',
+    age:23,
+    driver:true,
+    job:'computer',
+
+    aliveYear:function(){
+      const date= new Date();
+      const currentYear= date.getFullYear();
+      const totalYears= currentYear-(this.age);
+      console.log(`If your Age is ${this.age} and the Year is ${currentYear}, Your total years are ${totalYears}`);
+    }
+}
+console.log(myProfile.aliveYear());
+
+const markBMIs={
+    firstName:'Mark',
+    lastName:'Miller',
+    mass: '78',
+    height:'1.69',
+    data:0,
+    calcBMI: function (){
+        const total= (this.mass/this.height)**2;
+        this.data=Math.floor(total);
+        console.log(`The total BMI of ${this.firstName} is ${Math.floor(total)}`);
+    }
+
+}
+markBMIs.calcBMI();
+
+const johnBMIs={
+    firstName:'John',
+    lastName:'Smith',
+    mass: '92',
+    height:'1.95',
+    data:0,
+    calcBMI: function (){
+        const total= (this.mass/this.height)**2;
+        this.data=Math.floor(total);
+        console.log(`The total BMI of ${this.firstName} is ${Math.floor(total)}`);
+    }
+
+}
+johnBMIs.calcBMI();
+console.log( johnBMIs.data);
+
+if(markBMIs.data>johnBMIs.data){
+    console.log(`${markBMIs.firstName} has a higher data ${markBMIs.data}`);
+}else{
+    console.log(`${johnBMIs.firstName} has a higher data ${johnBMIs.data}`);
+
+}
+
+
 
 
 
