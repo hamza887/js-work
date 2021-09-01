@@ -174,9 +174,9 @@
 // }
 
 
-const friend1= 'Micheal';
-const friend2= "Steven";
-const friend3="Peter";
+// const friend1= 'Micheal';
+// const friend2= "Steven";
+// const friend3="Peter";
 
 // const friends= ['Micheal',"Steven","Peter"];
 // console.log(friends);
@@ -198,50 +198,71 @@ const friend3="Peter";
 
 // console.log(ages);
 
-const friends= ['Micheal',"Steven","Peter"];
+// const friends= ['Micheal',"Steven","Peter"];
 
-friends.push('hamza');
-console.log(friends);
+// friends.push('hamza');
+// console.log(friends);
 
-friends.unshift('hamza');
-console.log(friends);
+// friends.unshift('hamza');
+// console.log(friends);
 
-friends.pop();
 // friends.pop();
-console.log(friends);
+// // friends.pop();
+// console.log(friends);
 
-friends.shift();
-console.log(friends);
-friends.push(23);
-console.log(friends);
+// friends.shift();
+// console.log(friends);
+// friends.push(23);
+// console.log(friends);
 
 
-console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Steven'));
 
-console.log(friends.includes('peter'));
+// console.log(friends.includes('peter'));
 
-if(friends.includes('Peter')){
-    console.log('hello peter')
-}
+// if(friends.includes('Peter')){
+//     console.log('hello peter')
+// }
 
-const calcTip =(tip )=>{
-     return (tip/100)*15
-}
-const arr= [125,555,44];
-const hello= calcTip(arr[0]);
-console.log(hello);
+// const calcTip =(tip )=>{
+//      return (tip/100)*15
+// }
+// const arr= [125,555,44];
+// const hello= calcTip(arr[0]);
+// console.log(hello);
 
-arr.map((hh)=>console.log(Math.floor(calcTip(hh))));
+// arr.map((hh)=>console.log(Math.floor(calcTip(hh))));
 
-// console.log(calcTip(200));
+// // console.log(calcTip(200));
 
 const jones={
     firstName:"hamza",
     lastName:"Zaka",
     age : 2021-1998,
     job:"Programmer",
-    myFriends:['hamza','zaka','mobeen']
+    myFriends:['hamza','zaka','mobeen'],
+
+    calcAge: function(birthyear){
+        const date=new Date();
+        const year =date.getFullYear();
+        return year-birthyear;
+        console.log('hello birthyear');
+    }
 }
+console.log( jones.calcAge(1998));
+
+// console.log(jones);
+// console.log(jones.lastName);
+
+// const nameKey= "Name";
+// console.log(jones['first'+nameKey]);
+// console.log(jones['last'+nameKey]);
+
+// const interestedIn= prompt('what do you want to know about me');
+// console.log(jones[interestedIn]);
+// console.log('hello')
+// console.log('jdlfkjdlfkj');
+
 
 
 
