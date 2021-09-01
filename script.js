@@ -354,20 +354,30 @@
 // }
 // console.log(ages);
 
-const arr=['hamza','zaka','teacher','hello','hello2','hello3'];
+// const arr=['hamza','zaka','teacher','hello','hello2','hello3'];
 
 
-for(let i=arr.length-1;i>=0;i--){
-    console.log(arr[i]);
-}
+// for(let i=arr.length-1;i>=0;i--){
+//     console.log(arr[i]);
+// }
 
-for (let i = 1; i <=3; i++) {
-    console.log('--------- Starting our challenge'+ i);
-    for (let j = 0; j < arr.length; j++) {
-console.log(`Challenge ${i}: is for ${arr[j]} who is person ${j}`);
+// for (let i = 1; i <=3; i++) {
+//     console.log('--------- Starting our challenge'+ i);
+//     for (let j = 0; j < arr.length; j++) {
+// console.log(`Challenge ${i}: is for ${arr[j]} who is person ${j}`);
         
-    }
+//     }
+// }
+
+let dice = Math.floor(Math.random() *6)+1;
+// console.log(dice);
+
+while (dice!==6) {
+    console.log('You rolled a dice '+dice);
+    dice = Math.floor(Math.random() *6)+1;
+    if(dice===6) console.log('Loop is about to end........ as it hit 6');
 }
+
 
 
 
