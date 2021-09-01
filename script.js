@@ -235,6 +235,14 @@ arr.map((hh)=>console.log(Math.floor(calcTip(hh))));
 
 // console.log(calcTip(200));
 
+const jones={
+    firstName:"hamza",
+    lastName:"Zaka",
+    age : 2021-1998,
+    job:"Programmer",
+    myFriends:['hamza','zaka','mobeen']
+}
+
 
 
 
