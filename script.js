@@ -187,13 +187,39 @@ const friend3="Peter";
 // friends[2]='haello';
 // console.log(friends.length);
 
-const calcAge= (birthyear)=>{
-    return 2037- birthyear
-}
+// const calcAge= (birthyear)=>{
+//     return 2037- birthyear
+// }
 
-const years=[1990,1998,2000,2020];
-const age1= calcAge(years[0]);
-console.log(age1);
-const ages= [calcAge(years[0]),calcAge(years[1]),calcAge(years[2])];
+// const years=[1990,1998,2000,2020];
+// const age1= calcAge(years[0]);
+// console.log(age1);
+// const ages= [calcAge(years[0]),calcAge(years[1]),calcAge(years[2])];
 
-console.log(ages);
+// console.log(ages);
+
+const friends= ['Micheal',"Steven","Peter"];
+
+friends.push('hamza');
+console.log(friends);
+
+friends.unshift('hamza');
+console.log(friends);
+
+friends.pop();
+// friends.pop();
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+friends.push(23);
+console.log(friends);
+
+
+console.log(friends.indexOf('Steven'));
+
+console.log(friends.includes('peter'));
+
+
+
+
