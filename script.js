@@ -220,6 +220,21 @@ console.log(friends.indexOf('Steven'));
 
 console.log(friends.includes('peter'));
 
+if(friends.includes('Peter')){
+    console.log('hello peter')
+}
+
+const calcTip =(tip )=>{
+     return (tip/100)*15
+}
+const arr= [125,555,44];
+const hello= calcTip(arr[0]);
+console.log(hello);
+
+arr.map((hh)=>console.log(Math.floor(calcTip(hh))));
+
+// console.log(calcTip(200));
+
 
 
 
