@@ -317,6 +317,26 @@ if(markBMIs.data>johnBMIs.data){
 
 }
 
+// for (let hello = 0; hello <=10; hello++) {
+//     console.log('I  am hello no '+hello);
+    
+// }
+
+const arr=['hamza','zaka',23-1,'teacher',['hello','hello2','hello3']];
+const types=[];
+let hh=[]
+for (let i = 0; i <arr.length; i++) {
+    // console.log(arr[i], typeof arr[i]);
+    types[i]=typeof arr[i];
+    
+}
+// console.log(types);
+
+arr.forEach(element => {
+    console.log(element);
+    hh= typeof element;
+    console.log(hh);
+});
 
 
 
