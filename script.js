@@ -379,11 +379,13 @@ while (dice!==6) {
 }
 
 
-const x = 23;
-
-
+const x =23;
 
 const hello= 'hamza';
+
+const hl='hello';
+
+
 
 
 
