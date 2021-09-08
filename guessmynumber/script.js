@@ -9,9 +9,8 @@ const highscore=document.querySelector('.highscore');
 
 
 
-// again.addEventListener('click',()=>{
-//     location.reload();
-// })
+
+
 let random;
    random= Math.floor(Math.random()*20);
     console.log( number.value=random);
@@ -25,7 +24,7 @@ check.addEventListener('click',()=>{
         number.textContent=random;
         message.textContent='Congrats You Won';
         document.body.style.backgroundColor='green';
-    highscore.textContent=myguess;
+       highscore.textContent=myguess;
         
         myguess++;
     console.log(myguess);
@@ -42,4 +41,19 @@ check.addEventListener('click',()=>{
         console.log('hello');
     }
 });
+// const myhighscore= highscore.textContent=myguess;
+// console.log(myhighscore+'this isyoru high score');
+again.addEventListener('click',()=>{
+    const myhighscore= highscore.textContent=myguess;
+    console.log(myhighscore+'this isyoru high score');
+    message.textContent='Start guessing....';
+    score.textContent=0;
+    document.body.style.backgroundColor='black';
+    number.textContent='?';
+    guess.value='';
+    random= Math.floor(Math.random()*20);
+    console.log( number.value=random);
+
+
+})
 
