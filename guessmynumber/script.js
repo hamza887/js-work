@@ -3,6 +3,13 @@ const guess= document.querySelector('.guess');
 const check= document.querySelector('.check');
 const message= document.querySelector('.message');
 const number=document.querySelector('.number');
+const again=document.querySelector('.again');
+const body=document.querySelector('.body');
+
+again.addEventListener('click',()=>{
+  document.body.style.backgroundColor='white';
+  document.body.style.color='black'
+})
 
 
 let random;
@@ -11,6 +18,15 @@ let random;
 
 
 check.addEventListener('click',()=>{
-    console.log('hello chekc');
+    if(guess.value==number.value){
+        console.log('you are write' , guess.value,number.value);
+        number.textContent=random
+    }else{
+        if(guess.value<number.value){
+            console.log('hello this is low');
+        }else{
+            console.log('this is high');
+        }
+    }
 });
 
