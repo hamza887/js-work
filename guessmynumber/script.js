@@ -4,28 +4,42 @@ const check= document.querySelector('.check');
 const message= document.querySelector('.message');
 const number=document.querySelector('.number');
 const again=document.querySelector('.again');
-const body=document.querySelector('.body');
+const score=document.querySelector('.score');
+const highscore=document.querySelector('.highscore');
+
+
 
 again.addEventListener('click',()=>{
-  document.body.style.backgroundColor='white';
-  document.body.style.color='black'
+    location.reload();
 })
-
-
 let random;
    random= Math.floor(Math.random()*20);
     console.log( number.value=random);
 
-
+    let myguess=0;
+    score.textContent=myguess
 check.addEventListener('click',()=>{
+    // let myguess=0;
     if(guess.value==number.value){
         console.log('you are write' , guess.value,number.value);
-        number.textContent=random
-    }else{
+        number.textContent=random;
+        message.textContent='Congrats You Won';
+        const again=document.querySelector('.again').style.display='block';
+    highscore.textContent=myguess
+        
+    //     myguess++;
+    // console.log(myguess);
+    }else if(guess.value!=number.value){
+        myguess++;
+    console.log(myguess);
+      score.textContent=myguess
+    }
+        else{
         if(guess.value<number.value){
-            console.log('hello this is low');
+           message.textContent='This number is low'
         }else{
-            console.log('this is high');
+           message.textContent='This number is High'
+            
         }
     }
 });
