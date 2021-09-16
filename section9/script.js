@@ -43,11 +43,32 @@ const restraurant={
 };
 
 const newMenu= [...restraurant.categories];
-
 const mainMenuCopy= [...restraurant.mainMenu]
-
-
 const menu= [...newMenu,...mainMenuCopy];
-
 console.log(menu);
+
+const str= 'hamza';
+const letters=[...str].reverse();
+
+const [Pizza,risotto,...otherfood]=[
+  ...restraurant.mainMenu,...restraurant.starterMenu
+]
+console.log(Pizza,risotto,otherfood);
+
+const add=(...numbers)=>{
+  let sum=0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  console.log(sum);
+}
+ add(2,3,4,5);
+
+ const xh=[23,2,4,5];
+ add(...xh);
+
+ const orderPizza=()=>{
+   
+ }
+
 
