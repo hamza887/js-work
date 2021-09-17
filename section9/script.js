@@ -1,5 +1,5 @@
 
-
+'use strict'
 // const restraurant={
 //     name:"Classico Italiano",
 //     location: 'cia Angelo Tavanti 23, Firenze, Italy',
@@ -67,8 +67,17 @@ const add=(...numbers)=>{
  const xh=[23,2,4,5];
  add(...xh);
 
- const orderPizza=()=>{
-   
- }
+console.log(3|| 'jones');
+
+const restraurantguests=22;
+const guests1= restraurantguests || 10;
+console.log(guests1);
+
+// const guest2= restraurantguests ?? 10;
+// console.log(guest2);
+
+// const foo = null ?? 'default string';
+// console.log(foo);
+
 
 
