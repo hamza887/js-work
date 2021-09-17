@@ -79,5 +79,19 @@ console.log(guests1);
 // const foo = null ?? 'default string';
 // console.log(foo);
 
+// function sayhi(){
+//   console.log(name);
+//   console.log(age);
+//   var name='lyndia';
+//   let age=22;
+
+// }
+// sayhi();
+
+const game={
+  team1:"Bayern Munich",
+  team2:''
+
+}
 
 
