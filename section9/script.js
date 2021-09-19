@@ -130,6 +130,11 @@ const game={
 
 }
 
-console.log(game);
+const [players1,players2]=game.players;
+// console.log(players1,players2);
 
+const [gk,...field]=players1;
+console.log(gk, field);
+
+const allplayers=[...players1,...players2];
 
