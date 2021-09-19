@@ -90,8 +90,46 @@ console.log(guests1);
 
 const game={
   team1:"Bayern Munich",
-  team2:''
+  team2:'Borrussia dortmund',
+  players:[
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandoski'
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'akanji',
+      'Hakami',
+      'Weigl',
+      'witsel',
+      'hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze'
+    ],
+  ],
+  score:'4:0',
+  scored:['Lewandowski','Gnarby','lewandaski','Hummels'],
+  date:'Nov 9th, 2037',
+  odds:{
+   team1: 1.33,
+   x: 3.25,
+   team2:6.5
+  }
 
 }
+
+console.log(game);
 
 
