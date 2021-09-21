@@ -42,6 +42,10 @@ const restraurant={
   // }
 };
 
+const Menu=[...restraurant.starterMenu,...restraurant.mainMenu];
+
+for(const item of Menu) console.log(item)
+
 const newMenu= [...restraurant.categories];
 const mainMenuCopy= [...restraurant.mainMenu]
 const menu= [...newMenu,...mainMenuCopy];
@@ -137,4 +141,15 @@ const [gk,...field]=players1;
 console.log(gk, field);
 
 const allplayers=[...players1,...players2];
+
+console.log(allplayers);
+
+const players1final=[...players1, 'Thigo','Coutinho','Perisctic'];
+console.log(players1final);
+
+const printGoals=(...players)=>{
+  
+}
+
+
 
