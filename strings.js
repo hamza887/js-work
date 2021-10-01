@@ -51,6 +51,17 @@ const randomName=(name)=>{
 };
 randomName('hamMMza');
 
+const loginEmail='  hamzabutt8KJK87@hotmail.com ';
+console.log(loginEmail);
+const lowerEmail= loginEmail.trim();
+
+console.log(lowerEmail);
+
+const normalEmail= loginEmail.toLowerCase().trim();
+console.log(normalEmail);
+
+
+
 
 
 
