@@ -28,3 +28,14 @@ middleSeat('12C')
 middleSeat('123b')
 
 
+console.log(airline.toLocaleLowerCase());
+
+const passenger='hAmZa';
+console.log(passenger);
+
+console.log(passenger.toLowerCase());
+
+const firstLetter= passenger.slice(1);
+console.log(firstLetter);
+
+
