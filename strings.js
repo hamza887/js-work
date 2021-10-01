@@ -60,6 +60,27 @@ console.log(lowerEmail);
 const normalEmail= loginEmail.toLowerCase().trim();
 console.log(normalEmail);
 
+const checkEmail=(email)=>{
+    // console.log(email.split('').slice(-3).join(''));
+    email.split('').slice(-3).join('')=='com'?console.log('congrats on comoing to my website'):console.log('no it is not the write email');;
+}
+checkEmail('hamzabutt887@hotmail.com')
+checkEmail('hamzabutt887@hotmail.io')
+
+//replacing
+
+const priceFlight='288,567&';
+const price= priceFlight.replace('&','$').replace(',','.');
+console.log(price);
+
+const annoucement='All passengers come to boarding door 23';
+console.log(annoucement.replace('door','gate'));
+
+
+const place='Airbuss hamza';
+console.log(place.includes('hamza'));
+
+
 
 
 
