@@ -34,8 +34,16 @@ const passenger='hAmZa';
 console.log(passenger);
 
 console.log(passenger.toLowerCase());
+//passenger.charAt(1).toUpperCase();
 
-const firstLetter= passenger.slice(1);
+console.log(passenger);
+const lll=passenger.toLowerCase()
+const firstLetter= passenger.charAt(0).toUpperCase();
 console.log(firstLetter);
+
+
+const ll= firstLetter+lll.slice(1);
+console.log(ll);
+
 
 
