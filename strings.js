@@ -101,6 +101,21 @@ checkBaggage('i have a knife as well');
 console.log('a.very.nice.string'.split('.').join(' '));
 
 
+const capitalizeName=(name)=>{
+    let hh=[]
+   const names=name.split(' ');
+   console.log(names);
+
+   names.forEach(element => {
+       element.charAt(0).toUpperCase();
+       hh.push(element[0].toUpperCase()+element.slice(1))
+   });
+   console.log(hh);
+}
+
+capitalizeName('hamza mobeen zaka butt advocate')
+
+
 
 
 
