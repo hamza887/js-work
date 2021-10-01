@@ -128,6 +128,14 @@ const masking=(number)=>{
 }
 masking(234567845454);
 masking('23423425435')
+masking('dfdf435');
+
+//repeat
+
+const message2= 'Bad weather.... All Departures';
+console.log(message2.repeat(3));
+
+
 
 
 
