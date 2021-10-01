@@ -85,6 +85,21 @@ console.log(place.startsWith('Airbuss'));
 // const numbers= 343535;
 // console.log(numbers.startsWith(34));
 
+const callCops=()=>{
+    console.log('I am calling the police');
+}
+
+const checkBaggage=(items)=>{
+    (items.includes('gun' || 'knife')?callCops():console.log('you are good to go'));
+}
+checkBaggage('I have some food and some other stuff');
+
+checkBaggage('i have a gun and a knife as well');
+checkBaggage('i have a gun as well');
+checkBaggage('i have a knife as well');
+
+console.log('a.very.nice.string'.split('.').join(' '));
+
 
 
 
