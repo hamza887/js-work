@@ -110,11 +110,24 @@ const capitalizeName=(name)=>{
        element.charAt(0).toUpperCase();
        hh.push(element[0].toUpperCase()+element.slice(1))
    });
-   console.log(hh);
+   console.log(hh.join(' '));
 }
 
-capitalizeName('hamza mobeen zaka butt advocate')
+capitalizeName('hamza mobeen zaka butt advocate');
 
+//padding
+
+const message='go';
+console.log(message.padStart(3,"+").padEnd(20,'hamza'));
+
+
+const masking=(number)=>{
+    const str= String(number);
+    const last=str.slice(-4);
+    console.log(last.padStart(str.length,'*'));
+}
+masking(234567845454);
+masking('23423425435')
 
 
 
