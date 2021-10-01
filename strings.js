@@ -135,6 +135,34 @@ masking('dfdf435');
 const message2= 'Bad weather.... All Departures';
 console.log(message2.repeat(3));
 
+const planInLine=(n)=>{
+  console.log(`There are ${n} planes waiting in the bad weather ${' 🛩 '.repeat(n)}`);
+}
+
+planInLine(3);
+
+const convertCamel=(n)=>{
+     letter=[];
+   const dash=n.split('-');
+//    console.log(dash);
+
+ dash.forEach(element => {
+    const hh= element[0].toUpperCase() +element.slice(1)
+    // console.log(hh);
+    letter.push(hh)
+ });
+ console.log(letter.join(''));
+
+};
+
+convertCamel('hamza-zaka');
+convertCamel('hamza-butt');
+convertCamel('zaka-Ullah');
+
+
+
+
+
 
 
 
