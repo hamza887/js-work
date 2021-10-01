@@ -46,4 +46,11 @@ const ll= firstLetter+lll.slice(1);
 console.log(ll);
 
 
+const randomName=(name)=>{
+   console.log(name[0].toUpperCase()+name.slice(1).toLowerCase());
+};
+randomName('hamMMza');
+
+
+
 
