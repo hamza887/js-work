@@ -80,6 +80,11 @@ console.log(annoucement.replace('door','gate'));
 const place='Airbuss hamza';
 console.log(place.includes('hamza'));
 
+console.log(place.startsWith('Airbuss'));
+
+// const numbers= 343535;
+// console.log(numbers.startsWith(34));
+
 
 
 
