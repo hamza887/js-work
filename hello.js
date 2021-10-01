@@ -13,6 +13,7 @@
     
 // }
 // // console.log(tips);
+console.log('hello');
 
 // const calcAverage=(arr)=>{
 //     for (let i = 0; i < arr.length; i++) {
