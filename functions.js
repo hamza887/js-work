@@ -74,6 +74,16 @@ const greet=(greeting)=>{
  greethey('zaka')
 
 
+ greet('hey')('hamza zaka')
+
+ const lufthansa={
+     airline: 'lufthanse',
+     instaCode: 'LH',
+     bookings:[]
+ }
+ 
+
+
 
 
 
