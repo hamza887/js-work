@@ -81,7 +81,28 @@ const greet=(greeting)=>{
      instaCode: 'LH',
      bookings:[]
  }
- 
+
+const runOnce=()=>{
+    console.log('this will run th function agian');
+}
+runOnce();
+
+(()=>{
+    console.log('this will never run again');
+})();
+
+
+const secureBooking =()=>{
+    let passengerCount=0;
+
+    return ()=>{
+        passengerCount++;
+        console.log(`${passengerCount} passengers`);
+    }
+}
+
+
+
 
 
 
