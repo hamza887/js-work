@@ -78,13 +78,13 @@ const accounts = [account1, account2, account3, account4];
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-for (const e of movements) {
-    e>0?console.log('you deposited '+ e+'$'): console.log('You widraw '+Math.abs(e)+'$');;
-}
+// for (const e of movements) {
+//     e>0?console.log('you deposited '+ e+'$'): console.log('You widraw '+Math.abs(e)+'$');;
+// }
 
-movements.forEach(element => {
-    element >0?console.log(`You deposited ${element}$`):console.log(`You withdraw ${Math.abs(element)}$`);;
-});
+// movements.forEach(element => {
+//     element >0?console.log(`You deposited ${element}$`):console.log(`You withdraw ${Math.abs(element)}$`);;
+// });
 
 /////////////////////////////////////////////////
 
