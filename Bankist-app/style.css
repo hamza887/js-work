@@ -50,3 +50,24 @@ nav{
     outline: none;
     border: 1px solid #ccc;
 }
+
+.login__input::placeholder{
+    color: rgb(185, 31, 31);
+}
+
+.login__btn{
+    border: none;
+    background: none;
+    font-size: 2.2rem;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus{
+    outline: none;
+    color: #777;
+}
