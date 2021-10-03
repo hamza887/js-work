@@ -80,3 +80,16 @@ let arr =['a','b','c','d','e'];
 const aa= arr.slice(2,4)
 
 console.log(aa);
+
+console.log(arr.splice(2,2));
+
+//REVERSE
+
+const arr2=['ddf','ldfdkfl','dlf'];
+
+console.log(arr2.reverse());
+
+//CONCAT
+
+
+console.log(arr2.join('-'));
