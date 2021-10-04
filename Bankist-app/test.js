@@ -23,13 +23,42 @@ let humanDogs=[]
 
  }
 
- calcAvergeDogAges(dogAges)
- console.log(humanDogs);
+ const helloa=dogAges.filter(aa=>console.log(aa<10)).map(aa=>aa<=2? console.log( 2*aa):console.log (16+aa*4))
+
+
+console.log(helloa);
+
+// const result= dogAges.filter(aa=>aa<10);
+// console.log(result);
  
- const hh= humanDogs.filter(aa=>aa>=35)
- console.log(hh);
+//  const hh= humanDogs.filter(aa=>aa>=35)
+//  console.log(hh);
 
  
-const reducer = (previousValue, currentValue) => previousValue /currentValue;
+// const reducer = (previousValue, currentValue) => previousValue /currentValue;
 
-humanDogs.reduce(reducer);
+// humanDogs.reduce(reducer);
+
+
+
+// CHANING METHOD
+
+const calcverages=(ages)=>{
+   ages.map(age=> age<=2?2*age:16+age*4)
+   .filter(age=>age>=18)
+   .reduce((acc,age,i,arr)=> acc*age/arr.length,0)
+}
+
+const ages1=calcverages([5,2,4,1,15,8]);
+console.log(ages1);
+
+const js=[2,3,4,5,6,7];
+js.map(aa=>console.log( aa*2));
+
+js.filter((aa,bb,cc)=>console.log())
+
+console.log(js);
+
+const filtered= js.filter((jj)=> {
+  return jj>5})
+  console.log(filtered);
