@@ -59,6 +59,8 @@ js.filter((aa,bb,cc)=>console.log())
 
 console.log(js);
 
-const filtered= js.filter((jj)=> {
-  return jj>5})
+const filtered= js.filter((jj)=> jj>5)
   console.log(filtered);
+
+ const findme= js.find(aa=> aa==5)
+ console.log(findme);
