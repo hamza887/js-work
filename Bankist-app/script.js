@@ -63,6 +63,7 @@ const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
 const displayMovements=(movements)=>{
+    containerMovements.innerHTML='';
     movements.forEach((mov,i) => {
         const type=mov >0?'deposit':'withdrawal';
 
@@ -87,5 +88,12 @@ const currencies = new Map([
 ]);
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const eurToUsd=1.1;
+
+movements.map((mov)=>{
+    return mov*eurToUsd
+})
+
 
 /////////////////////////////////////////////////
