@@ -65,4 +65,7 @@ const filtered= js.filter((jj)=> jj>5)
  const findme= js.find(aa=> aa==5)
  console.log(findme);
 
+ // ARRAY METHODS
+
+
  
